@@ -10,22 +10,20 @@
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
-	<style>
-		
-	</style>
+
 </head>
 
 <body>
 	<main role="main">
 		<body>
-			<div class="container">
+			<div class="container landing">
 				<div class="row my-5">
 					<div class="col-lg-12">
 						<img class="koi image-fluid mx-auto d-block my-5" src=".\img\koi.png" alt="koi">
-						<h1 class="light-text-shadow">
+						<h1 class="light-text-shadow mt-5">
 							Daniel J. Byczynski
 						</h1>
-						<p class="light-text-shadow">Software Engineer in Boulder, Colorado</p>
+						<p class="light-text-shadow mb-5">Software Engineer in Boulder, Colorado</p>
 					</div>
 
 				</div>
@@ -33,9 +31,9 @@
 			</div>
 			</div>
 			<div class="horizontal-pane-dark">
-				<div class="container py-3">
+				<div class="container">
 					<div class="row py-3">
-						<div class="col-md-6 light-gray-color">
+						<div class="col-md-6 light-gray-color py-3">
 							<h2 class="py-3 light-gray-color">About Me</h2>
 							<p>I have nearly three years of experience as a software engineer. I worked on a number
 								of projects from the planning stages through go-live for small local startups and large
@@ -50,7 +48,7 @@
 								growing spicy chili peppers. I am a life-long snowboarder and love spending time in the
 								mountains.</p>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 py-3">
 							<h2 class="py-3 light-gray-color">Abilities</h2>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item ">C#/Asp.Net server-side development and customization.
@@ -204,12 +202,13 @@
 														<div class="col-md-12">
 															<hr />
 															<p>
-																I wrote this weight-plate calculator because I couldn't
-																find any that supported dumbbells or loading-pins. I
-																also wanted to make the output graphical to make it more
-																enjoyable to use. It supports metric and imperial units,
-																is designed to be mobile-friendly, and is built using
-																Angular.
+																This calculator allows users to determine which plates
+																are necessary to make a given weight. It allows for
+																multiple bar types, custom bar weights, and custom plate
+																quantities. I also wanted to make the output graphical
+																to make it more enjoyable to use. It supports metric and
+																imperial units, is designed to be mobile-friendly, and
+																is built using Angular.
 															</p>
 
 														</div>
@@ -243,20 +242,12 @@
 				</div>
 			</div>
 			<div class="horizontal-pane-white">
-				<div class="container py-4">
-					<div class="row justify-content-center">
-						<div class="col-md-2 p-2">
-							<a href="https://www.linkedin.com/in/daniel-b-25047814b/" type="button" class="btn btn-block btn-dark" target="_blank"><strong>LinkedIn</strong></a>
-						</div>
-						<div class="col-md-2 p-2">
-							<a href="https://github.com/DanielJByczynski" type="button" class="btn btn-block btn-dark" target="_blank"><strong>GitHub</strong></a>
-						</div>
-					</div>
-					<div class="row py-4">
+				<div class="container py-4">					
+					<div class="row pt-4">
 						<div class="col-12">
 							<div class="card contact">
 								<form id="contact" class="form-group card-body">
-									<h4 class="dark-gray-color py-3">Contact Me</h4>
+									<h4 class="dark-gray-color py-3">Say Hello!</h4>
 									<input type="email" class="form-control my-3" id="inputEmail" placeholder="Email" />
 
 									<textarea type="textarea" class="form-control my-3" id="inputMessage"
@@ -267,6 +258,16 @@
 										Send
 									</button>
 								</form>
+							</div>
+							<div class="row justify-content-center py-5">
+								<div class="col-md-2 p-2">
+									<a href="https://www.linkedin.com/in/daniel-b-25047814b/" type="button"
+										class="btn btn-block btn-dark" target="_blank"><strong>LinkedIn</strong></a>
+								</div>
+								<div class="col-md-2 p-2">
+									<a href="https://github.com/DanielJByczynski" type="button" class="btn btn-block btn-dark"
+										target="_blank"><strong>GitHub</strong></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -291,6 +292,6 @@
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
 
-	
+
 	<script src="./script.js" defer></script>
 </body>
