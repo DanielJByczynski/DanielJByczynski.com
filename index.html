@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<title>Daniel J. Byczynski - Software Engineer</title>
@@ -6,7 +7,8 @@
 	<link rel="icon" href="./img/koivicon.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
@@ -14,49 +16,58 @@
 </head>
 
 <body>
-	<main role="main">
-		<body>
-			<div class="container landing">
-				<div class="row my-5">
-					<div class="col-lg-12">
-						<img class="koi image-fluid mx-auto d-block my-5" src=".\img\koi.png" alt="koi">
-						<h1 class="light-text-shadow mt-5">
-							Daniel J. Byczynski
-						</h1>
-						<p class="light-text-shadow mb-5">Software Engineer in Boulder, Colorado</p>
-					</div>
-
-				</div>
+	<header>
+		<div class="container-fluid landing">
+			<div>
+				<img class="koi" src="./img/koi.png" alt="koi">
+				<h1>
+					Daniel J. Byczynski
+				</h1>
+				<p class="light-text-shadow mb-5">Software Engineer in Boulder, Colorado</p>
 			</div>
-			</div>
-			</div>
-			<div class="horizontal-pane-dark">
-				<div class="container">
-					<div class="row py-3">
-						<div class="col-md-6 light-gray-color py-3">
-							<h2 class="py-3 light-gray-color">About Me</h2>
+		</div>
+	</header>
+	<main>
+		<section class="about">
+			<div class="container-fluid">
+				<div class="row py-3">
+					<div class="col-md-6 about-me-content center-content-parent py-3">
+						<div class="center-content-child">
+							<h2 class="py-3">About Me</h2>
+							<hr>
 							<p>I have nearly three years of experience as a software engineer. I worked on a number
-								of projects from the planning stages through go-live for small local startups and large
+								of projects from the planning stages through go-live for small local startups and
+								large
 								organizations across the world.
 							</p>
 							<p>I am a capable full-stack developer and enjoy creating clean UI's using modern JS
-								frameworks. The majority of my professional experience has focused on the customization
+								frameworks. The majority of my professional experience has focused on the
+								customization
 								of
-								PIM/CMS tools such as inRiver, NopCommerce, EPiServer, and Umbraco for our clients.</p>
-							<p>Outside of the office I enjoy lifting weights, wrenching on cars/motorcycles, cooking,
+								PIM/CMS tools such as inRiver, NopCommerce, EPiServer, and Umbraco for our clients.
+							</p>
+							<p>Outside of the office I enjoy lifting weights, wrenching on cars/motorcycles,
+								cooking,
 								and
-								growing spicy chili peppers. I am a life-long snowboarder and love spending time in the
-								mountains.</p>
+								growing spicy chili peppers. I am a life-long snowboarder and love spending time in
+								the
+								mountains.
+							</p>
 						</div>
-						<div class="col-md-6 py-3">
-							<h2 class="py-3 light-gray-color">Abilities</h2>
+					</div>
+					<div class="col-md-6 about-me-content center-content-parent py-3">
+						<div class="center-content-child">
+							<h2 class="py-3">Abilities</h2>
+							<hr>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item ">C#/Asp.Net server-side development and customization.
 									inRiver
 									Certified Developer (May 2020) </li>
-								<li class="list-group-item">Front-End UI/UX design using Angular/AngularJS and Vue.js
+								<li class="list-group-item">Front-End UI/UX design using Angular/AngularJS and
+									Vue.js
 								</li>
-								<li class="list-group-item">SQL Database migrations to add features to existing services
+								<li class="list-group-item">SQL Database migrations to add features to existing
+									services
 								</li>
 								<li class="list-group-item">Agile methodology for project management</li>
 								<li class="list-group-item">Git/TFS - Unit/Integration Testing (Protractor) - DevOps
@@ -66,274 +77,263 @@
 					</div>
 				</div>
 			</div>
-			<div class="horizontal-pane-light">
-				<div class="container bg-3 py-3 text-center">
-					<div class="row pt-4">
-						<div class="col-lg-12">
-							<h2>Projects</h2>
+		</section>
+		<section class="horizontal-pane-light">
+			<div class="container bg-3 py-3 text-center">
+				<div class="row pt-4">
+					<div class="col-lg-12">
+						<h2>Projects</h2>
+					</div>
+				</div>
+				<div class="row my-3">
+					<div class="col-md-4 my-3 d-flex">
+						<div class="card flex-fill">
+							<img class="card-img-top  p-3" src="https://i.imgur.com/40XPbRc.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Bridal Hairstylist Portfolio/Blog</h5>
+								<p class="card-text">Umbraco V8 CMS hosted on Azure.</p>
+							</div>
+							<div class="card-footer">
+								<img class="card-icon float-left" src="./img/umbracoicon.png" alt="Angular">
+								<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
+									data-target=".bridal-hair-modal">Learn More</button>
+								<div class="modal fade bridal-hair-modal" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">Bridal Hairstylist Portfolio/Blog</h4>
+												<button type="button" class="close" data-dismiss="modal">X</button>
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-md-12 py-2">
+														<img src="https://i.imgur.com/40XPbRc.jpg" alt="wedding-main"
+															class="img-fluid" />
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-md-12">
+														<hr />
+														<p>
+															This site was built using Umbraco V8 and is currently
+															hosted on an Azure development server. (Project
+															currently under active construction)
+														</p>
+
+													</div>
+												</div>
+											</div>
+
+											<!-- Modal footer -->
+											<div class="modal-footer">
+												<a href="https://wildernesscolorado.azurewebsites.net"
+													class="btn btn-block orange-bg light-gray-color"
+													target="_blank">Open
+													Site</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="row my-3">
-
-
-
-						<div class="col-md-4 my-3 d-flex">
-							<div class="card flex-fill">
-								<img class="card-img-top  p-3" src="https://i.imgur.com/40XPbRc.jpg"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Bridal Hairstylist Portfolio/Blog</h5>
-									<p class="card-text">Umbraco V8 CMS hosted on Azure.</p>
-								</div>
-								<div class="card-footer">
-									<img class="card-icon float-left" src="./img/umbracoicon.png" alt="Angular">
-									<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
-										data-target=".wedding-modal">Learn More</button>
-									<div class="modal fade wedding-modal" tabindex="-1" role="dialog"
-										aria-labelledby="myLargeModalLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h4 class="modal-title">Bridal Hairstylist Portfolio/Blog</h4>
-													<button type="button" class="close" data-dismiss="modal">X</button>
-												</div>
-												<div class="modal-body">
-													<div class="row">
-														<div class="col-md-12 py-2">
-															<img src="https://i.imgur.com/40XPbRc.jpg"
-																alt="wedding-main" class="img-fluid" />
-														</div>
-													</div>
-
-													<div class="row">
-														<div class="col-md-12">
-															<hr />
-															<p>
-																This site was built using Umbraco V8 and is currently hosted on an Azure development server. (Project currently under active construction)
-															</p>
-
-														</div>
+					<div class="col-md-4 my-3 d-flex">
+						<div class="card flex-fill">
+							<img class="card-img-top  p-3" src="https://i.imgur.com/w1oe9R8.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Wedding RSVP Website</h5>
+								<p class="card-text">Wedding RSVP/Information website for my upcoming wedding!</p>
+							</div>
+							<div class="card-footer">
+								<img class="card-icon float-left" src="./img/angularicon.png" alt="Angular">
+								<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
+									data-target=".wedding-modal">Learn More</button>
+								<div class="modal fade wedding-modal" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">Wedding RSVP/Information Website</h4>
+												<button type="button" class="close" data-dismiss="modal">X</button>
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-md-12 py-2">
+														<img src="https://i.imgur.com/6JpRfke.jpg" alt="wedding-main"
+															class="img-fluid" />
 													</div>
 												</div>
+												<div class="row">
+													<div class="col-md-4 py-2">
+														<img src="https://i.imgur.com/P1ZkEsC.png" alt="wedding-main"
+															class="img-fluid modal-img" />
+													</div>
 
-												<!-- Modal footer -->
-												<div class="modal-footer">
-													<a href="https://wildernesscolorado.azurewebsites.net" type="button"
-														class="btn btn-block orange-bg light-gray-color"
-														target="_blank">Open Site</a>
+													<div class="col-md-4 py-2">
+														<img src="https://i.imgur.com/SErMll6.png" alt="wedding-main"
+															class="img-fluid  modal-img" />
+													</div>
+
+													<div class="col-md-4 py-2">
+														<img src="https://i.imgur.com/84ewUTH.png" alt="wedding-main"
+															class="img-fluid  modal-img" />
+													</div>
 												</div>
+
+												<div class="row">
+													<div class="col-md-12">
+														<hr />
+														<p>
+															This site was built as a resource for friends and family
+															to easily find information about my wife and I's
+															upcoming wedding celebration. It includes all the
+															information necessary to attend the celebration, and has
+															links to wedding registries and an RSVP submission form.
+														</p>
+														<p>
+															The site was built using Angular and uses firebase as a
+															datastore for the RSVP data. Local Storage is used to
+															prevent double-RSVPing. Data can easily be exported via
+															the firebase console, or by downloading an XML file.
+														</p>
+
+													</div>
+												</div>
+											</div>
+
+											<!-- Modal footer -->
+											<div class="modal-footer">
+												<a href="https://www.byczynski.us"
+													class="btn btn-block orange-bg light-gray-color"
+													target="_blank">Open
+													Site</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="col-md-4 my-3 d-flex">
+						<div class="card flex-fill">
+							<img class="card-img-top p-3" src="https://i.imgur.com/NFvRQMx.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Weight Plate Calculator</h5>
+								<p class="card-text">Lifting is hard, but plate math is harder.</p>
+							</div>
+							<div class="card-footer">
+								<img class="card-icon float-left" src="./img/angularicon.png" alt="Angular">
+								<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
+									data-target=".weight-modal">Learn More</button>
+								<div class="modal fade weight-modal" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<!-- Modal Header -->
+											<div class="modal-header">
+												<h4 class="modal-title">Weight Plate Calculator</h4>
+												<button type="button" class="close" data-dismiss="modal">X</button>
+											</div>
 
-
-
-
-
-
-						<div class="col-md-4 my-3 d-flex">
-							<div class="card flex-fill">
-								<img class="card-img-top  p-3" src="https://i.imgur.com/w1oe9R8.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Wedding RSVP Website</h5>
-									<p class="card-text">Wedding RSVP/Information website for my upcoming wedding!</p>
-								</div>
-								<div class="card-footer">
-									<img class="card-icon float-left" src="./img/angularicon.png" alt="Angular">
-									<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
-										data-target=".wedding-modal">Learn More</button>
-									<div class="modal fade wedding-modal" tabindex="-1" role="dialog"
-										aria-labelledby="myLargeModalLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h4 class="modal-title">Wedding RSVP/Information Website</h4>
-													<button type="button" class="close" data-dismiss="modal">X</button>
+											<!-- Modal body -->
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-md-12 py-2">
+														<img src="https://i.imgur.com/737Ni7H.png" alt="wedding-main"
+															class="img-fluid" />
+													</div>
 												</div>
-												<div class="modal-body">
-													<div class="row">
-														<div class="col-md-12 py-2">
-															<img src="https://i.imgur.com/6JpRfke.jpg"
-																alt="wedding-main" class="img-fluid" />
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-4 py-2">
-															<img src="https://i.imgur.com/P1ZkEsC.png"
-																alt="wedding-main" class="img-fluid modal-img" />
-														</div>
-
-														<div class="col-md-4 py-2">
-															<img src="https://i.imgur.com/SErMll6.png"
-																alt="wedding-main" class="img-fluid  modal-img" />
-														</div>
-
-														<div class="col-md-4 py-2">
-															<img src="https://i.imgur.com/84ewUTH.png"
-																alt="wedding-main" class="img-fluid  modal-img" />
-														</div>
+												<div class="row">
+													<div class="col-md-4 py-2">
+														<img src="https://i.imgur.com/P9azDOb.png" alt="wedding-main"
+															class="img-fluid modal-img" />
 													</div>
 
-													<div class="row">
-														<div class="col-md-12">
-															<hr />
-															<p>
-																This site was built as a resource for friends and family
-																to easily find information about my wife and I's
-																upcoming wedding celebration. It includes all the
-																information necessary to attend the celebration, and has
-																links to wedding registries and an RSVP submission form.
-															</p>
-															<p>
-																The site was built using Angular and uses firebase as a
-																datastore for the RSVP data. Local Storage is used to
-																prevent double-RSVPing. Data can easily be exported via
-																the firebase console, or by downloading an XML file.
-															</p>
+													<div class="col-md-4 py-2">
+														<img src="https://i.imgur.com/32H4Wo7.png" alt="wedding-main"
+															class="img-fluid  modal-img" />
+													</div>
 
-														</div>
+													<div class="col-md-4 py-2">
+														<img src="https://i.imgur.com/NTNb0BU.png" alt="wedding-main"
+															class="img-fluid  modal-img" />
 													</div>
 												</div>
 
-												<!-- Modal footer -->
-												<div class="modal-footer">
-													<a href="https://www.byczynski.us" type="button"
-														class="btn btn-block orange-bg light-gray-color"
-														target="_blank">Open Site</a>
+												<div class="row">
+													<div class="col-md-12">
+														<hr />
+														<p>
+															This calculator allows users to determine which plates
+															are necessary to make a given weight. It allows for
+															multiple bar types, custom bar weights, and custom plate
+															quantities. I also wanted to make the output graphical
+															to make it more enjoyable to use. It supports metric and
+															imperial units, is designed to be mobile-friendly, and
+															is built using Angular.
+														</p>
+
+													</div>
 												</div>
+											</div>
+
+											<!-- Modal footer -->
+											<div class="modal-footer">
+												<a href="https://www.platemathishard.com"
+													class="btn btn-block orange-bg light-gray-color"
+													target="_blank">Open
+													Site</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 my-3 d-flex">
-							<div class="card flex-fill">
-								<img class="card-img-top p-3" src="https://i.imgur.com/NFvRQMx.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Weight Plate Calculator</h5>
-									<p class="card-text">Lifting is hard, but plate math is harder.</p>
-								</div>
-								<div class="card-footer">
-									<img class="card-icon float-left" src="./img/angularicon.png" alt="Angular">
-									<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
-										data-target=".weight-modal">Learn More</button>
-									<div class="modal fade weight-modal" tabindex="-1" role="dialog"
-										aria-labelledby="myLargeModalLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="modal-content">
-												<!-- Modal Header -->
-												<div class="modal-header">
-													<h4 class="modal-title">Weight Plate Calculator</h4>
-													<button type="button" class="close" data-dismiss="modal">X</button>
-												</div>
-
-												<!-- Modal body -->
-												<div class="modal-body">
-													<div class="row">
-														<div class="col-md-12 py-2">
-															<img src="https://i.imgur.com/737Ni7H.png"
-																alt="wedding-main" class="img-fluid" />
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-4 py-2">
-															<img src="https://i.imgur.com/P9azDOb.png"
-																alt="wedding-main" class="img-fluid modal-img" />
-														</div>
-
-														<div class="col-md-4 py-2">
-															<img src="https://i.imgur.com/32H4Wo7.png"
-																alt="wedding-main" class="img-fluid  modal-img" />
-														</div>
-
-														<div class="col-md-4 py-2">
-															<img src="https://i.imgur.com/NTNb0BU.png"
-																alt="wedding-main" class="img-fluid  modal-img" />
-														</div>
-													</div>
-
-													<div class="row">
-														<div class="col-md-12">
-															<hr />
-															<p>
-																This calculator allows users to determine which plates
-																are necessary to make a given weight. It allows for
-																multiple bar types, custom bar weights, and custom plate
-																quantities. I also wanted to make the output graphical
-																to make it more enjoyable to use. It supports metric and
-																imperial units, is designed to be mobile-friendly, and
-																is built using Angular.
-															</p>
-
-														</div>
-													</div>
-												</div>
-
-												<!-- Modal footer -->
-												<div class="modal-footer">
-													<a href="https://www.platemathishard.com" type="button"
-														class="btn btn-block orange-bg light-gray-color"
-														target="_blank">Open Site</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 my-3 d-flex">
-							<div class="card flex-fill">
-								<img class="card-img-top p-3" src="https://i.imgur.com/ZbQkQl0.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Professional Experience</h5>
-									<p class="card-text">Nearly three years of professional experience working on
-										several large projects for various clients.</p>
-								</div>
+					</div>
+					<div class="col-md-4 my-3 d-flex">
+						<div class="card flex-fill">
+							<img class="card-img-top p-3" src="https://i.imgur.com/ZbQkQl0.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Professional Experience</h5>
+								<p class="card-text">Nearly three years of professional experience working on
+									several large projects for various clients.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="horizontal-pane-white">
-				<div class="container py-4">					
-					<div class="row pt-4">
-						<div class="col-12">
-							<div class="card contact">
-								<form id="contact" class="form-group card-body">
-									<h4 class="dark-gray-color py-3">Say Hello!</h4>
-									<input type="email" class="form-control my-3" id="inputEmail" placeholder="Email" />
+		</section>
+		<section class="horizontal-pane-white">
+			<div class="container py-4">
+				<div class="row pt-4">
+					<div class="col-12">
+						<div class="card contact">
+							<form id="contact" class="form-group card-body">
+								<h4 class="dark-gray-color py-3">Say Hello!</h4>
+								<input type="email" class="form-control my-3" id="inputEmail" placeholder="Email" />
 
-									<textarea type="textarea" class="form-control my-3" id="inputMessage"
-										placeholder="Message"></textarea>
+								<textarea class="form-control my-3" id="inputMessage"
+									placeholder="Message"></textarea>
 
-									<button id="send" type="submit"
-										class="btn btn-block btn-dark btn-outline mx-auto float-right">
-										Send
-									</button>
-								</form>
+								<button id="send" type="submit"
+									class="btn btn-block btn-dark btn-outline mx-auto float-right">
+									Send
+								</button>
+							</form>
+						</div>
+						<div class="row justify-content-center py-5">
+							<div class="col-md-2 p-2">
+								<a href="https://www.linkedin.com/in/daniel-b-25047814b/" 
+									class="btn btn-block btn-dark" target="_blank"><strong>LinkedIn</strong></a>
 							</div>
-							<div class="row justify-content-center py-5">
-								<div class="col-md-2 p-2">
-									<a href="https://www.linkedin.com/in/daniel-b-25047814b/" type="button"
-										class="btn btn-block btn-dark" target="_blank"><strong>LinkedIn</strong></a>
-								</div>
-								<div class="col-md-2 p-2">
-									<a href="https://github.com/DanielJByczynski" type="button" class="btn btn-block btn-dark"
-										target="_blank"><strong>GitHub</strong></a>
-								</div>
+							<div class="col-md-2 p-2">
+								<a href="https://github.com/DanielJByczynski"
+									class="btn btn-block btn-dark" target="_blank"><strong>GitHub</strong></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</body>
+		</section>
 	</main>
 	<footer class="py-4 container-fluid">
 		<div class="row">
@@ -348,10 +348,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
 		integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
 		crossorigin="anonymous"></script>
-
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
-
-
 	<script src="./script.js" defer></script>
 </body>
+</html>

@@ -1,6 +1,9 @@
+/***** DanielJByczynski CSS Stylesheet *****/
+
+/* Generic elements & classes */
 body {
+  font-family: "Noto Sans", sans-serif;
   text-align: center;
-  font-family: "Merriweather", serif;
 }
 
 h1,
@@ -8,35 +11,81 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: "Merriweather", serif;
   font-weight: bold;
   color: #454f60;
 }
 
-.light-text-shadow {
-  text-shadow: 3px 3px 3px #e7eef2;
+.center-content-parent {
 }
 
-.landing {  
+.center-content-child {
+  padding: 0 20%;
+}
+
+footer {
+  color: white;
+  background-color: #262626;
+}
+
+/* Landing screen */
+.landing {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.horizontal-pane-dark {
-  -webkit-box-shadow: 0 -4px 4px 2px #e7eef2;
-  -moz-box-shadow: 0 -4px 4px 2px #e7eef2;
-  box-shadow: 0 -4px 4px 2px #e7eef2;
+.landing h1 {
+  text-shadow: 3px 3px 3px #e7eef2;
+  margin: 1em 0 0.25em;
+}
+
+.koi {
+  max-width: 200px;
+  animation: rotation infinite 250s linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* About */
+.about {
+  filter: drop-shadow(0px 0px 2px rgba(69,79,96,1));
+}
+
+.about .container-fluid {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   background-color: #454f60;
-  padding: 5em 0;
+}
+
+.about-me-content, .about-me-content h2 {
+  color: #e7eef2;
+}
+
+/* Projects */
+
+/* Contact */
+
+.contact {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: white;
+  color: #e7eef2;
+}
+
+.form-group {
+  margin-bottom: 0;
 }
 
 .horizontal-pane-light {
-  -webkit-box-shadow: inset 0 -4px 4px 2px #d2d7df;
-  -moz-box-shadow: inset 0 -4px 4px 2px #d2d7df;
-  box-shadow: inset 0 4px 4px 2px #d2d7df;
-  background-color: #e7eef2;
-  padding: 5em 0;
 }
 
 .horizontal-pane-white {
@@ -73,29 +122,6 @@ h5 {
   background-color: #454f60;
 }
 
-footer {
-  color: white;
-  background-color: #262626;
-}
-
-.jumbotron {
-  background-color: white;
-}
-
-.koi {
-  max-width: 200px;
-  animation: rotation infinite 250s linear;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-}
-
 .card-icon {
   width: 30px;
   margin: auto 0;
@@ -106,13 +132,15 @@ footer {
   max-height: 135px;
 }
 
-.contact {
-  margin: 0 auto;
-  max-width: 700px;
-  background-color: white;
-  color: #e7eef2;
+/*** Responsive Styles ***/
+@media only screen and (max-width: 1260px) {
+  .center-content-child {
+    padding: 0 10%;
+  }
 }
 
-.form-group {
-  margin-bottom: 0;
+@media only screen and (max-width: 960px) {
+  .center-content-child {
+    padding: 0 2%;
+  }
 }
