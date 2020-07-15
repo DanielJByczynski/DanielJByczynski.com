@@ -9,6 +9,8 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
@@ -30,7 +32,7 @@
 	<main>
 		<section class="about">
 			<div class="container-fluid">
-				<div class="row py-3">
+				<div class="row py-5">
 					<div class="col-md-6 about-me-content center-content-parent py-3">
 						<div class="center-content-child">
 							<h2 class="py-3">About Me</h2>
@@ -78,7 +80,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="horizontal-pane-light">
+		<section class="projects">
 			<div class="container bg-3 py-3 text-center">
 				<div class="row pt-4">
 					<div class="col-lg-12">
@@ -87,17 +89,18 @@
 				</div>
 				<div class="row my-3">
 					<div class="col-md-4 my-3 d-flex">
-						<div class="card flex-fill">
+						<div class="card border-0 flex-fill">
 							<img class="card-img-top  p-3" src="https://i.imgur.com/40XPbRc.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">Bridal Hairstylist Portfolio/Blog</h5>
 								<p class="card-text">Umbraco V8 CMS hosted on Azure.</p>
 							</div>
-							<div class="card-footer">
-								<img class="card-icon float-left" src="./img/umbracoicon.png" alt="Angular">
-								<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
+							<div class="card-footer border-0">
+								<i class="float-left tech-icon fab fa-umbraco"></i>
+								<button class="btn btn-sm btn-dark btn-floating float-right" data-toggle="modal"
 									data-target=".bridal-hair-modal">Learn More</button>
-								<div class="modal fade bridal-hair-modal" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal fade bridal-hair-modal" tabindex="-1" role="dialog"
+									aria-hidden="true">
 									<div class="modal-dialog modal-lg">
 										<div class="modal-content">
 											<div class="modal-header">
@@ -139,15 +142,15 @@
 						</div>
 					</div>
 					<div class="col-md-4 my-3 d-flex">
-						<div class="card flex-fill">
+						<div class="card border-0 flex-fill">
 							<img class="card-img-top  p-3" src="https://i.imgur.com/w1oe9R8.png" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">Wedding RSVP Website</h5>
 								<p class="card-text">Wedding RSVP/Information website for my upcoming wedding!</p>
 							</div>
-							<div class="card-footer">
-								<img class="card-icon float-left" src="./img/angularicon.png" alt="Angular">
-								<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
+							<div class="card-footer border-0">
+								<i class="float-left tech-icon fab fa-angular"></i>
+								<button class="btn btn-sm btn-dark float-right" data-toggle="modal"
 									data-target=".wedding-modal">Learn More</button>
 								<div class="modal fade wedding-modal" tabindex="-1" role="dialog" aria-hidden="true">
 									<div class="modal-dialog modal-lg">
@@ -215,15 +218,15 @@
 						</div>
 					</div>
 					<div class="col-md-4 my-3 d-flex">
-						<div class="card flex-fill">
+						<div class="card border-0 flex-fill">
 							<img class="card-img-top p-3" src="https://i.imgur.com/NFvRQMx.png" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">Weight Plate Calculator</h5>
 								<p class="card-text">Lifting is hard, but plate math is harder.</p>
 							</div>
-							<div class="card-footer">
-								<img class="card-icon float-left" src="./img/angularicon.png" alt="Angular">
-								<button class="btn btn-sm btn-outline-dark float-right" data-toggle="modal"
+							<div class="card-footer border-0">
+									<i class="float-left tech-icon fab fa-angular"></i>
+								<button class="btn btn-sm btn-dark float-right" data-toggle="modal"
 									data-target=".weight-modal">Learn More</button>
 								<div class="modal fade weight-modal" tabindex="-1" role="dialog" aria-hidden="true">
 									<div class="modal-dialog modal-lg">
@@ -290,7 +293,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 my-3 d-flex">
-						<div class="card flex-fill">
+						<div class="card border-0 flex-fill">
 							<img class="card-img-top p-3" src="https://i.imgur.com/ZbQkQl0.png" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title">Professional Experience</h5>
@@ -302,32 +305,31 @@
 				</div>
 			</div>
 		</section>
-		<section class="horizontal-pane-white">
-			<div class="container py-4">
+		<section class="contact">
+			<div class="container-fluid py-4">
 				<div class="row pt-4">
 					<div class="col-12">
-						<div class="card contact">
+						<div class="card border-0 bg-transparent">
 							<form id="contact" class="form-group card-body">
 								<h4 class="dark-gray-color py-3">Say Hello!</h4>
 								<input type="email" class="form-control my-3" id="inputEmail" placeholder="Email" />
 
-								<textarea class="form-control my-3" id="inputMessage"
-									placeholder="Message"></textarea>
+								<textarea class="form-control my-3" id="inputMessage" placeholder="Message"></textarea>
 
 								<button id="send" type="submit"
 									class="btn btn-block btn-dark btn-outline mx-auto float-right">
-									Send
+									<i class="far fa-envelope"></i> Send
 								</button>
 							</form>
 						</div>
 						<div class="row justify-content-center py-5">
-							<div class="col-md-2 p-2">
-								<a href="https://www.linkedin.com/in/daniel-b-25047814b/" 
-									class="btn btn-block btn-dark" target="_blank"><strong>LinkedIn</strong></a>
+							<div class="col-md-3 p-2">
+								<a href="https://www.linkedin.com/in/daniel-b-25047814b/" class="btn btn-block btn-dark"
+									target="_blank"><strong><i class="fab fa-linkedin"></i> LinkedIn</strong></a>
 							</div>
 							<div class="col-md-2 p-2">
-								<a href="https://github.com/DanielJByczynski"
-									class="btn btn-block btn-dark" target="_blank"><strong>GitHub</strong></a>
+								<a href="https://github.com/DanielJByczynski" class="btn btn-block btn-dark"
+									target="_blank"><strong><i class="fab fa-github"></i> GitHub</strong></a>
 							</div>
 						</div>
 					</div>
@@ -338,7 +340,7 @@
 	<footer class="py-4 container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
-				<h6 class="light-gray-color">Daniel Byczynski - <span id="year"></span></h6>
+				<h6 class="footer-text">Daniel Byczynski - <span id="year"></span></h6>
 			</div>
 		</div>
 	</footer>
@@ -351,5 +353,7 @@
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
 	<script src="./script.js" defer></script>
+	<script src="https://kit.fontawesome.com/f954749663.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
